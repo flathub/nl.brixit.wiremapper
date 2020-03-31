@@ -41,7 +41,10 @@
       "build-commands": [
         "install -D nl.brixit.wiremapper.desktop /app/share/applications/nl.brixit.wiremapper.desktop",
         "install -D nl.brixit.wiremapper.svg /app/share/icons/hicolor/scalable/apps/nl.brixit.wiremapper.svg",
-        "install -D nl.brixit.wiremapper.metainfo.xml /app/share/metainfo/nl.brixit.wiremapper.metainfo.xml"
+        "install -D nl.brixit.wiremapper.metainfo.xml /app/share/metainfo/nl.brixit.wiremapper.metainfo.xml",
+        "install -D nl.brixit.wiremapper.gschema.xml /app/share/glib-2.0/schemas/nl.brixit.wiremapper.gschema.xml",
+	"glib-compile-schemas /app/share/glib-2.0/schemas",
+	"rm /app/share/glib-2.0/schemas/nl.brixit.wiremapper.gschema.xml"
       ],
       "sources": [
         {
@@ -58,9 +61,15 @@
 	},
         {
           "type": "file",
-          "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/26b95535001fe9b398b2b09757a30a2eeb8a9ccd/data/nl.brixit.wiremapper.metainfo.xml",
+          "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/d960c29c5abb96ea03a88d1051152c9d061d5a67/data/nl.brixit.wiremapper.metainfo.xml",
 	  "dest-filename": "nl.brixit.wiremapper.metainfo.xml",
-	  "sha256": "cd286914c5a0e85b752f69b0e8cff977b4d5c232cdabf62cc210c7e63edd72a3"
+	  "sha256": "690db46794415499fda1c484663b310617cdd28f59024f2d270cb60b91e2fee6"
+	},
+        {
+          "type": "file",
+          "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/d960c29c5abb96ea03a88d1051152c9d061d5a67/data/nl.brixit.wiremapper.gschema.xml",
+	  "dest-filename": "nl.brixit.wiremapper.gschema.xml",
+	  "sha256": "73c5d846b7b38c58b8643642a392e4bd77a4e4ab642d863cab86bf60d86a5ae9"
 	}
       ]
     }
