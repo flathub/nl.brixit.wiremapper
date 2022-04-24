@@ -1,1 +1,1 @@
-{"name": "wiremapper", "buildsystem": "meson", "sources": [{"type": "git", "url": "https://gitlab.com/MartijnBraam/wiremapper.git", "tag": "0.9.1", "commit": "f8c5ce1b50bca622bfdfa8a03c7cbe176628e104"}]}
+{"name": "wiremapper", "buildsystem": "meson", "sources": [{"type": "git", "url": "https://gitlab.com/MartijnBraam/wiremapper.git", "tag": "0.10.0", "commit": "e36b13c27d6d96e876ebb39aa9fd8ea7215f5a2b"}]}

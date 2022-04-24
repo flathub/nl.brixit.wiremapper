@@ -1,1 +1,78 @@
-{"app-id": "nl.brixit.wiremapper", "runtime": "org.gnome.Platform", "runtime-version": "3.38", "sdk": "org.gnome.Sdk", "command": "wiremapper", "finish-args": ["--socket=wayland", "--socket=fallback-x11", "--share=ipc", "--system-talk-name=org.bluez", "--allow=bluetooth", "--share=network"], "modules": ["python3-deps.json", {"name": "libhandy", "buildsystem": "meson", "config-opts": ["-Dprofiling=false", "-Dintrospection=enabled", "-Dgtk_doc=false", "-Dtests=false", "-Dexamples=false", "-Dvapi=false", "-Dglade_catalog=disabled"], "sources": [{"type": "git", "url": "https://gitlab.gnome.org/GNOME/libhandy.git", "tag": "1.0.0", "commit": "94313c206258860b2428712e7ece1d02c5177857"}]}, "wiremapper.json", {"name": "desktop-files", "buildsystem": "simple", "build-commands": ["install -D nl.brixit.wiremapper.desktop /app/share/applications/nl.brixit.wiremapper.desktop", "install -D nl.brixit.wiremapper.svg /app/share/icons/hicolor/scalable/apps/nl.brixit.wiremapper.svg", "install -D nl.brixit.wiremapper.metainfo.xml /app/share/metainfo/nl.brixit.wiremapper.metainfo.xml", "install -D nl.brixit.wiremapper.gschema.xml /app/share/glib-2.0/schemas/nl.brixit.wiremapper.gschema.xml", "glib-compile-schemas /app/share/glib-2.0/schemas", "rm /app/share/glib-2.0/schemas/nl.brixit.wiremapper.gschema.xml"], "sources": [{"type": "file", "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/f8c5ce1b50bca622bfdfa8a03c7cbe176628e104/data/nl.brixit.wiremapper.svg", "dest-filename": "nl.brixit.wiremapper.svg", "sha256": "7ea63903464f4186a99441fe370f7c08ad67d2d81ef7915aeeee6b1542b0d58f"}, {"type": "file", "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/f8c5ce1b50bca622bfdfa8a03c7cbe176628e104/data/nl.brixit.wiremapper.desktop", "dest-filename": "nl.brixit.wiremapper.desktop", "sha256": "ace30d48e39a6d174d7867b5889862845da0029b858119a0255a86b6fc6a0fc4"}, {"type": "file", "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/f8c5ce1b50bca622bfdfa8a03c7cbe176628e104/data/nl.brixit.wiremapper.metainfo.xml", "dest-filename": "nl.brixit.wiremapper.metainfo.xml", "sha256": "333282c8c600fd57a560bde68a2505069399888f6500e6bb305ae1a69ea50bbc"}, {"type": "file", "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/f8c5ce1b50bca622bfdfa8a03c7cbe176628e104/data/nl.brixit.wiremapper.gschema.xml", "dest-filename": "nl.brixit.wiremapper.gschema.xml", "sha256": "73c5d846b7b38c58b8643642a392e4bd77a4e4ab642d863cab86bf60d86a5ae9"}]}]}
+{
+  "app-id": "nl.brixit.wiremapper",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "42",
+  "sdk": "org.gnome.Sdk",
+  "command": "wiremapper",
+  "finish-args": [
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--share=ipc",
+    "--system-talk-name=org.bluez",
+    "--allow=bluetooth",
+    "--share=network"
+  ],
+  "modules": [
+    "python3-deps.json",
+    {
+      "name": "libhandy",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Dprofiling=false",
+        "-Dintrospection=enabled",
+        "-Dgtk_doc=false",
+        "-Dtests=false",
+        "-Dexamples=false",
+        "-Dvapi=false",
+        "-Dglade_catalog=disabled"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
+          "tag": "1.6.1",
+          "commit": "4186dae5570cf8e73cf8a145236240eec3a237b5"
+        }
+      ]
+    },
+    "wiremapper.json",
+    {
+      "name": "desktop-files",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -D nl.brixit.wiremapper.desktop /app/share/applications/nl.brixit.wiremapper.desktop",
+        "install -D nl.brixit.wiremapper.svg /app/share/icons/hicolor/scalable/apps/nl.brixit.wiremapper.svg",
+        "install -D nl.brixit.wiremapper.metainfo.xml /app/share/metainfo/nl.brixit.wiremapper.metainfo.xml",
+        "install -D nl.brixit.wiremapper.gschema.xml /app/share/glib-2.0/schemas/nl.brixit.wiremapper.gschema.xml",
+        "glib-compile-schemas /app/share/glib-2.0/schemas",
+        "rm /app/share/glib-2.0/schemas/nl.brixit.wiremapper.gschema.xml"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/e72d03875e718ededb04f39d7e06b7a8262cfd5f/data/nl.brixit.wiremapper.svg",
+          "dest-filename": "nl.brixit.wiremapper.svg",
+          "sha256": "7ea63903464f4186a99441fe370f7c08ad67d2d81ef7915aeeee6b1542b0d58f"
+        },
+        {
+          "type": "file",
+          "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/e72d03875e718ededb04f39d7e06b7a8262cfd5f/data/nl.brixit.wiremapper.desktop",
+          "dest-filename": "nl.brixit.wiremapper.desktop",
+          "sha256": "ace30d48e39a6d174d7867b5889862845da0029b858119a0255a86b6fc6a0fc4"
+        },
+        {
+          "type": "file",
+          "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/e72d03875e718ededb04f39d7e06b7a8262cfd5f/data/nl.brixit.wiremapper.metainfo.xml",
+          "dest-filename": "nl.brixit.wiremapper.metainfo.xml",
+          "sha256": "acd190a2c898d596ac444aaf96336f7eb87ec80e203b5a124bd997f1d16735ff"
+        },
+        {
+          "type": "file",
+          "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/e72d03875e718ededb04f39d7e06b7a8262cfd5f/data/nl.brixit.wiremapper.gschema.xml",
+          "dest-filename": "nl.brixit.wiremapper.gschema.xml",
+          "sha256": "73c5d846b7b38c58b8643642a392e4bd77a4e4ab642d863cab86bf60d86a5ae9"
+        }
+      ]
+    }
+  ]
+}
