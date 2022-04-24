@@ -64,7 +64,7 @@
           "type": "file",
           "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/e72d03875e718ededb04f39d7e06b7a8262cfd5f/data/nl.brixit.wiremapper.metainfo.xml",
           "dest-filename": "nl.brixit.wiremapper.metainfo.xml",
-          "sha256": "acd190a2c898d596ac444aaf96336f7eb87ec80e203b5a124bd997f1d16735ff"
+          "sha256": "333282c8c600fd57a560bde68a2505069399888f6500e6bb305ae1a69ea50bbc"
         },
         {
           "type": "file",
