@@ -14,27 +14,6 @@
   ],
   "modules": [
     "python3-deps.json",
-    {
-      "name": "libhandy",
-      "buildsystem": "meson",
-      "config-opts": [
-        "-Dprofiling=false",
-        "-Dintrospection=enabled",
-        "-Dgtk_doc=false",
-        "-Dtests=false",
-        "-Dexamples=false",
-        "-Dvapi=false",
-        "-Dglade_catalog=disabled"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
-          "tag": "1.6.1",
-          "commit": "4186dae5570cf8e73cf8a145236240eec3a237b5"
-        }
-      ]
-    },
     "wiremapper.json",
     {
       "name": "desktop-files",
