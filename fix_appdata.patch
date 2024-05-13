@@ -1,0 +1,16 @@
+diff --git a/nl.brixit.wiremapper.metainfo.xml b/nl.brixit.wiremapper.metainfo.xml
+index b59305d..fcdd68f 100644
+--- a/nl.brixit.wiremapper.metainfo.xml
++++ b/nl.brixit.wiremapper.metainfo.xml
+@@ -32,6 +32,11 @@
+     <project_license>MIT</project_license>
+     <url type="homepage">https://gitlab.com/MartijnBraam/wiremapper</url>
+     <url type="bugtracker">https://gitlab.com/MartijnBraam/wiremapper/-/issues</url>
++    <url type="vcs-browser">https://gitlab.com/MartijnBraam/wiremapper</url>
++    <developer_name>Martijn Braam</developer_name>
++    <developer id="io.gitlab.martijnbraam">
++        <name>Martijn Braam</name>
++    </developer>
+ 
+     <releases>
+         <release version="0.9.1" date="2020-10-22">
