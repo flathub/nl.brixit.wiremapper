@@ -1,7 +1,7 @@
 {
   "app-id": "nl.brixit.wiremapper",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "42",
+  "runtime-version": "46",
   "sdk": "org.gnome.Sdk",
   "command": "wiremapper",
   "finish-args": [
@@ -50,6 +50,10 @@
           "url": "https://gitlab.com/MartijnBraam/wiremapper/-/raw/e72d03875e718ededb04f39d7e06b7a8262cfd5f/data/nl.brixit.wiremapper.gschema.xml",
           "dest-filename": "nl.brixit.wiremapper.gschema.xml",
           "sha256": "73c5d846b7b38c58b8643642a392e4bd77a4e4ab642d863cab86bf60d86a5ae9"
+        },
+        {
+          "type": "patch",
+          "path": "fix_appdata.patch"
         }
       ]
     }
