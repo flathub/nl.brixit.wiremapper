@@ -1,0 +1,5 @@
+cobs
+meson-python
+dbus-python
+pycairo
+pockethernet
